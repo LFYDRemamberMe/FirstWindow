@@ -1,0 +1,22 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "x64\\Debug\\BaseWindow.h.obj",
+            "outputs": [
+                "F:\\ChillBit_Launcher\\FirstWindow\\FirstWindow\\x64\\Debug\\vc143.pdb",
+                "x64\\Debug\\",
+                "F:\\ChillBit_Launcher\\FirstWindow\\FirstWindow\\x64\\Debug\\BaseWindow.h.ifc"
+            ],
+            "provides": [
+                {
+                    "logical-name": "BaseWindow.h",
+                    "source-path": "f:\\chillbit_launcher\\firstwindow\\firstwindow\\basewindow.h",
+                    "lookup-method": "absolute"
+                }
+            ],
+            "requires": []
+        }
+    ]
+}
