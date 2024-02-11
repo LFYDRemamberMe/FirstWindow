@@ -1,2 +1,9 @@
 ﻿  Проверка источников на наличие зависимостей модуля…
+  Define.cpp
+  Window.cpp
+F:\ChillBit_Launcher\FirstWindow\FirstWindow\Window.cpp(119,103): warning C4244: аргумент: преобразование "LONG" в "FLOAT", возможна потеря данных
+F:\ChillBit_Launcher\FirstWindow\FirstWindow\Window.cpp(119,128): warning C4244: аргумент: преобразование "LONG" в "FLOAT", возможна потеря данных
+F:\ChillBit_Launcher\FirstWindow\FirstWindow\Window.cpp(123,45): warning C4244: аргумент: преобразование "LONG" в "FLOAT", возможна потеря данных
+F:\ChillBit_Launcher\FirstWindow\FirstWindow\Window.cpp(123,34): warning C4244: аргумент: преобразование "LONG" в "FLOAT", возможна потеря данных
+  Создание кода...
   FirstWindow.vcxproj -> F:\ChillBit_Launcher\FirstWindow\x64\Debug\FirstWindow.exe

@@ -1,9 +1,7 @@
-#include <windows.h>
-#include <d2d1.h>
-#pragma comment(lib, "d2d1")
-
 #include "BaseWindow.h"
 #include "Define.cpp"
+
+#pragma once
 
 template <class T> void SafeRelease(T** ppT)
 {
@@ -99,6 +97,7 @@ void MainWindow::OnPaint()
         D2D1_SIZE_U sizeA = D2D1::SizeU(rcA.right, rcA.bottom);
 
         BeginPaint(m_hwnd, &ps);
+        HDC hdc = BeginPaint(m_hwnd, &ps);
 
         pRenderTarget->BeginDraw();
 
@@ -153,11 +152,11 @@ void MainWindow::Resize()
     }
 }
 
-int WINAPI wWinMain(HINSTANCE hInstance, HINSTANCE, PWSTR, int nCmdShow)
+int WINAPI wWinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, PWSTR pCmdLine, int nCmdShow)
 {
     MainWindow win;
 
-    if (!win.Create(L"Calculator", WS_OVERLAPPEDWINDOW))
+    if (!win.Create(L"Калькулятор", WS_OVERLAPPEDWINDOW & ~WS_THICKFRAME & ~WS_MAXIMIZEBOX))
     {
         return 0;
     }
@@ -165,7 +164,6 @@ int WINAPI wWinMain(HINSTANCE hInstance, HINSTANCE, PWSTR, int nCmdShow)
     ShowWindow(win.Window(), nCmdShow);
 
     // Run the message loop.
-
     MSG msg = { };
     while (GetMessage(&msg, NULL, 0, 0))
     {
@@ -180,10 +178,11 @@ LRESULT MainWindow::HandleMessage(UINT uMsg, WPARAM wParam, LPARAM lParam)
 {
     switch (uMsg)
     {
+
     case WM_CREATE:
     {
         // Создание и загрузка иконки
-        HICON hIcon = LoadIcon(GetModuleHandle(NULL), MAKEINTRESOURCE(IDI_YOUR_ICON));
+        HICON hIcon = LoadIcon(GetModuleHandle(NULL), MAKEINTRESOURCE(IDI_MWND_ICON));
         if (hIcon != NULL)
         {
             // Установка иконки для большого размера
@@ -208,8 +207,6 @@ LRESULT MainWindow::HandleMessage(UINT uMsg, WPARAM wParam, LPARAM lParam)
     case WM_PAINT:
         OnPaint();
         return 0;
-
-
 
     case WM_SIZE:
         Resize();
