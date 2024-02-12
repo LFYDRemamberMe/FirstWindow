@@ -1,9 +1,10 @@
 ﻿  Проверка источников на наличие зависимостей модуля…
-  Define.cpp
   Window.cpp
-F:\ChillBit_Launcher\FirstWindow\FirstWindow\Window.cpp(119,103): warning C4244: аргумент: преобразование "LONG" в "FLOAT", возможна потеря данных
-F:\ChillBit_Launcher\FirstWindow\FirstWindow\Window.cpp(119,128): warning C4244: аргумент: преобразование "LONG" в "FLOAT", возможна потеря данных
-F:\ChillBit_Launcher\FirstWindow\FirstWindow\Window.cpp(123,45): warning C4244: аргумент: преобразование "LONG" в "FLOAT", возможна потеря данных
-F:\ChillBit_Launcher\FirstWindow\FirstWindow\Window.cpp(123,34): warning C4244: аргумент: преобразование "LONG" в "FLOAT", возможна потеря данных
-  Создание кода...
+F:\ChillBit_Launcher\FirstWindow\FirstWindow\Window.cpp(120,103): warning C4244: аргумент: преобразование "LONG" в "FLOAT", возможна потеря данных
+F:\ChillBit_Launcher\FirstWindow\FirstWindow\Window.cpp(120,128): warning C4244: аргумент: преобразование "LONG" в "FLOAT", возможна потеря данных
+F:\ChillBit_Launcher\FirstWindow\FirstWindow\Window.cpp(124,45): warning C4244: аргумент: преобразование "LONG" в "FLOAT", возможна потеря данных
+F:\ChillBit_Launcher\FirstWindow\FirstWindow\Window.cpp(124,34): warning C4244: аргумент: преобразование "LONG" в "FLOAT", возможна потеря данных
+F:\ChillBit_Launcher\FirstWindow\FirstWindow\Window.cpp(184,13): warning C4101: hdc: неиспользованная локальная переменная
+F:\ChillBit_Launcher\FirstWindow\FirstWindow\Window.cpp(183,21): warning C4101: ps: неиспользованная локальная переменная
+F:\ChillBit_Launcher\FirstWindow\FirstWindow\Window.cpp(185,14): warning C4101: buff: неиспользованная локальная переменная
   FirstWindow.vcxproj -> F:\ChillBit_Launcher\FirstWindow\x64\Debug\FirstWindow.exe

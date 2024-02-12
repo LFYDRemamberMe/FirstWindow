@@ -2,7 +2,7 @@
 // Включаемый файл, созданный в Microsoft Visual C++.
 // Используется FirstWindow.rc
 //
-#define IDI_ICON1                       101
+#define IDI_ICON1                       50
 
 // Next default values for new objects
 // 
